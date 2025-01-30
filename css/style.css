@@ -55,16 +55,41 @@ p {
 }
 
 .cta {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
-  background-color: #ffd700;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 16px 32px;  /* Slightly larger for better UX */
+  font-size: 20px;
   font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 
+/* Default hover effect for all CTAs */
 .cta:hover {
-  background-color: #e5c100;
+  transform: scale(1.08); /* Slightly stronger hover effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* A bit more shadow depth */
+  transition: all 0.2s ease-in-out; /* Ensures smooth animation */
+}
+
+/* Buy Now button */
+.cta-buy {
+  background-color: #ff5722; /* Bright Orange */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-buy:hover {
+  background-color: #e64a19; /* Darker Orange */
+}
+
+/* Newsletter button */
+.cta-newsletter {
+  background-color: #007bff; /* Bright Blue */
+}
+
+.cta-newsletter:hover {
+  background-color: #0056b3; /* Darker Blue */
 }
 
 .cta-footer {
@@ -249,4 +274,7 @@ footer .social-proof p {
   #newsletter-form input {
     width: 100%;
   }
+}
+.hidden {
+  display: none;
 }

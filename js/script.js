@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Newsletter Form Toggle Function
+    function showNewsletterForm() {
+        var form = document.getElementById("newsletter-form");
+        if (form) {
+            form.classList.toggle("hidden");
+        }
+    }
+
+    // Attach event listener to "Get a Free Chapter" button
+    const getFreeChapterBtn = document.getElementById("get-free-chapter-btn");
+    if (getFreeChapterBtn) {
+        getFreeChapterBtn.addEventListener("click", showNewsletterForm);
+    }
+
+    // Newsletter Form Submission Handling
     const form = document.getElementById("newsletter-form");
     const emailInput = document.getElementById("email");
 
@@ -16,20 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Scroll-to-top Button Handling
     const scrollTopButton = document.getElementById("scroll-top");
-
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            scrollTopButton.style.display = "block";
-        } else {
-            scrollTopButton.style.display = "none";
-        }
-    });
-
-    scrollTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+    if (scrollTopButton) {
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
         });
-    });
+
+        scrollTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+    }
 });

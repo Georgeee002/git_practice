@@ -16,10 +16,10 @@
 
 
  <!-- Favicon -->
- <link rel="icon" type="image/png" href="favicon/favicon-96x96.png">
-  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="favicon/site.webmanifest">
  
 </head>
 <body>
@@ -33,9 +33,9 @@
   <h1>Break Free and Transform</h1>
   <p>Discover the story that will inspire you to embrace change.</p>
   <div class="cta-buttons">
-    <a href="#newsletter" class="cta">Join the Newsletter</a>
-    <a href="#" class="cta">Get the Book</a>
-  </div>
+    <a href="#newsletter" class="cta cta-newsletter">📩 Get a Free Chapter</a>
+    <a href="https://www.amazon.com/Breaking-Silence-Shadows-Giorgio-Sanctis-ebook/dp/B0DTJGYJN3" target="_blank" class="cta cta-buy">🚀 Start Your Journey – Get the Book</a>
+</div>
 </header>
 
 
@@ -43,8 +43,11 @@
   <section id="about">
     <h2>About the Book</h2>
     <p><i>"For years, I was stuck in the shadows, until I found the strength to step into the light."</i></p>
-    <p><b>Breaking the Silence of Shadows</b> by Giorgio De Sanctis is a raw and uplifting memoir about turning adversity into strength. Through personal trials and triumphs, it offers a powerful message of resilience, self-discovery, and the courage to embrace change. Perfect for anyone seeking inspiration and growth, this story proves that even the darkest shadows can lead to light.</p>
-  </section>
+    <p><b>Breaking the Silence of Shadows</b> by Giorgio De Sanctis is a raw and uplifting memoir about turning adversity into strength...</p>
+    <div class="cta-buttons">
+        <a href="https://www.amazon.com/Breaking-Silence-Shadows-Giorgio-Sanctis-ebook/dp/B0DTJGYJN3" target="_blank" class="cta cta-buy">📖 Read Now & Transform</a>
+    </div>
+</section>
 
   <!-- Author Section -->
 <section id="author">
@@ -61,17 +64,23 @@
 </section>
 
   <!-- Newsletter Section -->
-  <div id="newsletter-section">
-    <h2>Join the Newsletter</h2>
-    <p>Subscribe now to receive updates, exclusive content, and a free preview of Chapter 1!</p>
-    <form id="newsletter-form" action="https://www.yournewsletterservice.com" method="POST">
-      <input type="email" id="email" placeholder="Enter your email to start your journey of transformation" required>
-      <button type="submit">Subscribe</button>
-    </form>
-    <p>Or get the full book now on Kindle:</p>
-    <a href="https://www.amazon.com/Breaking-Silence-Shadows-Giorgio-Sanctis-ebook/dp/B0DTJGYJN3/ref=sr_1_1?crid=LEPNVM3OQC3S&dib=eyJ2IjoiMSJ9.GhfRNLOYFAOWzrCM5gWgQDzqFVZ4MPIaQ-0EuSu_JM5_Pkw6wv2L55KxACX3FCeOJDjEohtJDso4L183WHLpKC53opA54-wZtfWR5aONmnJGAHujIhrmJXKRLkfNI_VFLeM6E-58UIz31vQAIck-Xiy3nDcGWYXRhH46p9QGyeUodQwr5gF2QQoZJWTEkRejB4oA5NAz-wZf_N-c0IDifBBvzQKFaOywgg51HJrr1N4.j2x_UCl2pwpzwt7lq3UIqjMEjpA_24FtHs-gXJExF18&dib_tag=se&keywords=Breaking+The+Silence+of+Shadows&qid=1737650924&sprefix=breaking+the+silence+of+shadows%2Caps%2C189&sr=8-1" target="_blank" class="cta">Get the Book on Kindle</a>
-  </div>
+ <!-- Newsletter Section -->
+<div id="newsletter-section">
+  <h2>Join the Newsletter</h2>
+  <p>Subscribe now to receive updates, exclusive content, and a free preview of Chapter 1!</p>
+  
+  <!-- Newsletter Form (Initially Hidden) -->
+  <form id="newsletter-form" action="https://www.yournewsletterservice.com" method="POST" class="hidden">
+    <input type="email" id="email" placeholder="Enter your email to start your journey of transformation" required>
+    <button type="submit">Subscribe</button>
+</form>
 
+  <p>Or get the full book now on Kindle:</p>
+  <a href="https://www.amazon.com/Breaking-Silence-Shadows-Giorgio-Sanctis-ebook/dp/B0DTJGYJN3" target="_blank" class="cta">Get the Book on Kindle</a>
+</div>
+
+<!-- Get a Free Chapter Button -->
+<a href="javascript:void(0);" id="get-free-chapter-btn" class="cta cta-newsletter">📩 Get a Free Chapter</a>
 
   <!-- Footer Section -->
   <footer>
@@ -85,5 +94,7 @@
       <p><i>"This book changed the way I see myself." – Early Reader</i></p>
     </div>
   </footer>
+  <!-- Include JavaScript file before closing body -->
+<script src="js/script.js"></script>
 </body>
 </html>
