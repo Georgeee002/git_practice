@@ -50,3 +50,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const getFreeChapterBtn = document.querySelector(".cta-newsletter");
+
+    if (getFreeChapterBtn) {
+        getFreeChapterBtn.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default behavior (optional)
+            
+            // Create a hidden link element
+            const link = document.createElement("a");
+            link.href = "pdf/free-chapter.pdf";
+            link.setAttribute("download", "free-chapter.pdf");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
+});
